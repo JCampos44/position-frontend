@@ -1,10 +1,10 @@
 <template>
     <v-row class="">
-        <v-col cols="3">
+        <v-col md="3" cols="12">
             <NuevoMontoForm />
         </v-col>
 
-        <v-col cols="9">
+        <v-col md="9" cols="12">
             <MontosGrafico @reRenderGrafico="$forceUpdate" />
         </v-col>
 
