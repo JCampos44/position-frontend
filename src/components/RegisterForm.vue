@@ -52,6 +52,8 @@ export default {
                 localStorage.setItem('user', data.user)
                 localStorage.setItem('token', data.token)
 
+                location.href = 'mis-montos'
+
             }).catch(error => {
                 const errors = error.response.data.errors
                 

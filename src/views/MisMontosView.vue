@@ -28,7 +28,8 @@ export default {
     },
     created() {
         if (!this.isLoggedIn) {
-            this.$router.push('/login');
+            location.href = '/'
+            // this.$router.push('/login');
         }
     }
 }

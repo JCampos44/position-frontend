@@ -44,8 +44,8 @@ export default {
                 localStorage.setItem('user', JSON.stringify(data.user))
                 localStorage.setItem('token', data.token)
 
-                this.$router.push('/mis-montos')
-                // location.href = '/mis-montos'
+                // this.$router.push('/mis-montos')
+                location.href = 'mis-montos'
 
             }).catch(error => {
                 this.backendErrors = error.response.data.message

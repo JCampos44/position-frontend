@@ -32,7 +32,8 @@ export default {
     },
     created() {
         if (this.isLoggedIn) {
-            this.$router.push('/mis-montos');
+            location.href = 'mis-montos'
+            // this.$router.push('/mis-montos');
         }
     }
 }
