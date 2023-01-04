@@ -18,7 +18,8 @@ export default {
                 if (response.data.message == 'Sesión cerrada') {
                     localStorage.clear()
 
-                    location.href = '/login';
+                    // location.href = '/login';
+                    this.$router.push('/login')
                 }
             
             }).catch(error => {
